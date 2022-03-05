@@ -12,9 +12,10 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Acceuil', 'cours', 'Contact'];
+
 
 
 const ResponsiveAppBar = () => {
@@ -37,9 +38,10 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" style={
+    <AppBar position="static" color="default" style={
       {
-        backgroundColor:"#edeef3",
+        backgroundColor:"transparent",
+        boxShadow:"0px 0px 0px 0px" 
 
       }
     }>
@@ -104,12 +106,12 @@ const ResponsiveAppBar = () => {
             }} 
             src="logofinaaaaale.png" alt="" />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'  ,marginLeft:"72%" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'bleu', display: 'block' }}
+                sx={{ my: 2, color: '#647CB8', display: 'block',fontWeight:"700" ,fontFamily: 'Nanum Gothic, sans-serif',textDecoration:"none"}}
               >
                 {page}
               </Button>

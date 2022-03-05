@@ -1,0 +1,47 @@
+.rotate {
+    animation: rotation 6s infinite linear;
+    z-index: -1000;
+    
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.pinkCercle{
+    position: absolute;
+    top: 20vh;
+    left:10vw}
+.homeImage{
+    z-index: -10000;
+    top: 60vh;
+    right: 47%;
+    position: absolute;
+    animation: upDown 6s infinite ;
+        
+     }
+@keyframes upDown {
+        0% {
+            top: 60vh;
+        }
+        50% {
+            top: 65vh;
+        }
+        100%{
+            top: 60vh;
+        }
+      }
+.firstColor{
+    
+}
+.bgFirstColor{
+    background-color: #4863AB;
+    border: 0;
+    transition: 0.2s;
+}
+.bgFirstColor:hover{
+    background-color: #637bbb;
+}
