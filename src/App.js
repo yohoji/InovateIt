@@ -29,7 +29,7 @@ function App() {
             
         </Route>
       </Routes>
-       <HomeContainer/>
+
     </div>
   );
 }
