@@ -85,7 +85,7 @@ export default function MultiActionAreaCard({ image, imageDescrption, lessons, r
           <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1, justifyContent: 'space-between' }}>
             <Typography sx={{ display: 'flex', alignItems: 'center', fontSize: "16px", color: "#6d6e75" }} align="center" gutterBottom noWrap variant="h5" component="div">
               <BookOutlinedIcon />
-              {lessons + " Lesson"}
+              {lessons + " leçon"}
             </Typography>
             <Typography sx={{ display: 'flex', alignItems: 'center', fontSize: "16px", color: "#6d6e75" }} align="center" gutterBottom noWrap variant="h5" component="div">
               <StarPurple500OutlinedIcon sx={{ color: '#ff9415' }} />
@@ -108,7 +108,7 @@ export default function MultiActionAreaCard({ image, imageDescrption, lessons, r
               {price}
           </Typography>
           <Button sx={theme.cardFooter.button} size="small" endIcon={<ArrowForwardIcon />}>
-            Know Details
+            Voir plus
           </Button>
       </CardActions>
     </Card>

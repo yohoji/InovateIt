@@ -65,7 +65,7 @@ class ContactOne extends Component {
                                     <i className="far fa-envelope-open-text" />
                                 </div>
                                 <div className="contact-info">
-                                    <p>kamoula706@gmail.com</p>
+                                    <p>kamel2htira@gmail.com</p>
                                 </div>
                             </div> {/* /.single-contact-info */}
                             <div className="single-contact-info col-sm-6 col-12">

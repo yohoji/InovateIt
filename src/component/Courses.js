@@ -70,17 +70,22 @@ const Courses = () => {
       }))
     return (
         <section style={theme.section}>
-            <Container>
+            <div>
+                <img style={{
+                    position:"absolute",top:"0"
+                }} src="page-title.jpg" alt="" />
+            </div>
+            <Container style={{marginTop:'400px'}}>
                 <Box sx={theme.sectionHeader}>
                     <div style={theme.sectionHeaderWrapper}>
-                        <Typography sx={theme.sectionTitle}>Find The Right <br /> Online <span style={theme.sectionHeaderCourse}> Course <StyledImg src="/images/yellow-bg.png" alt=""></StyledImg> </span> For You </Typography>
-                        <p style={theme.sectionSubTitle}>You don't have to struggle alone, you've got our assistance and help.</p>
+                        <Typography sx={theme.sectionTitle}>Trouver le bon <br /> Cours <span style={theme.sectionHeaderCourse}> en ligne <StyledImg src="/images/yellow-bg.png" alt=""></StyledImg> </span> pour votre enfant  </Typography>
+                        <p style={theme.sectionSubTitle}>Vous n'avez pas à lutter seul, vous avez notre assistance et notre aide.</p>
                     </div>
                 </Box>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }} justifyContent="center">
                     {Array.from(Array(6)).map((_, index) => (
                         <Grid item xs={2} sm={4} md={4} key={index}>
-                            <MultiActionAreaCard image="/images/course-1.jpg" lessons="33" rating="4.5" raters="(33)" courseTitle="Become a product Manager learn the skills & job." Author="Jim Séchen" tagColor="#b128ff" price="Free" />
+                            <MultiActionAreaCard image="/images/course-1.jpg" lessons="33" rating="4.5" raters="(33)" courseTitle="la meilleure façon d'enseigner les chiffres et les lettres à votre enfant." Author="Si Hamadi" tagColor="#b128ff" price="Gratuit" />
                         </Grid>
                     ))}
                 </Grid>
