@@ -2,19 +2,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
 import './homeContainer.css'
+import { Link } from "react-router-dom"
 
 
 import { Modal } from './Modal'
 import {useState} from 'react'
 
 function HomeContainer() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const openModal = () => {
     const a =!showModal
     setShowModal(a);
   }
     return (<>
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+      { showModal ? <Modal showModal={false} setShowModal={setShowModal} /> : null }
 <div class="container col-xxl-8 px-4 py-5" style={{
     marginTop:"100px"
     
@@ -46,11 +47,12 @@ function HomeContainer() {
               padding:'5px 60px'
           }}
           class="btn btn-primary btn-lg  me-md-2 bgFirstColor" onClick={openModal}>Commencer</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg "
+          <Link class="btn btn-outline-secondary btn-lg"
           style={{
             padding:'5px 40px'
         }}
-          >Voir cours</button>
+        to="/cours"
+          >Voir cours</Link>
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom"
 
 const pages = ['Acceuil', 'cours', 'Contact'];
 
@@ -108,13 +109,14 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'  ,marginLeft:"72%" } }}>
             {pages.map((page) => (
-              <Button
+              <Link
+                to={page}
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: '#647CB8', display: 'block',fontWeight:"700" ,fontFamily: 'Nanum Gothic, sans-serif',textDecoration:"none"}}
+                style={{ my: 2, color: '#647CB8', display: 'block',fontWeight:"700" ,fontFamily: 'Nanum Gothic, sans-serif',textDecoration:"none", marginLeft: "15%"}}
               >
                 {page}
-              </Button>
+              </Link>
             ))}
           </Box>
 

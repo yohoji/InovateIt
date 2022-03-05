@@ -2,9 +2,9 @@
 import './App.css';
 import ResponsiveAppBar from './component/navbar'
 import HomeContainer from './component/homeContainer'
-import { Modal } from './component/Modal'
-import {useState} from 'react'
-import {Routes,Route} from 'react-router-dom'
+import { Routes,Route } from 'react-router-dom'
+import Courses from './component/Courses'
+import Contact from './component/Contact'
 
 
 
@@ -17,17 +17,9 @@ function App() {
      
       <ResponsiveAppBar/>
       <Routes>
-        <Route path='/' element={<HomeContainer/>}>
-            
-        </Route>
-
-        <Route path='/courses' >
-            
-        </Route>
-
-        <Route path='/contact' >
-            
-        </Route>
+        <Route path='/Acceuil' element={<HomeContainer/>} />
+        <Route path='/cours' element={ <Courses /> } />
+        <Route path='/Contact' element={ <Contact />} />
       </Routes>
 
     </div>
