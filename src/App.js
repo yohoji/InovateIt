@@ -17,8 +17,8 @@ function App() {
      
       <ResponsiveAppBar/>
       <Routes>
-        <Route path='/' exact>
-
+        <Route path='/' element={<HomeContainer/>}>
+            
         </Route>
 
         <Route path='/courses' >
